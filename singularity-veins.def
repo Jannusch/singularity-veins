@@ -178,6 +178,12 @@ MirrorURL:  http://httpredir.debian.org/debian
 
     rm -fr .git docs build tests
 
+    # compile veins
+    cd /opt/veins
+    chmod +x configure
+    ./configure
+    make
+
     apt-get -y autoremove
     apt-get -y clean
     apt-get -y autoclean
