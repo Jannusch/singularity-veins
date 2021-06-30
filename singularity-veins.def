@@ -51,9 +51,9 @@ MirrorURL:  http://httpredir.debian.org/debian
     set -e
 
     # Use default versions if environment variables (SINGULARITYENV_VEINS_VERSION etc.) are left unset
-    : ${VEINS_VERSION=5.0}
-    : ${OPP_VERSION=5.6}
-    : ${SUMO_VERSION=1.4.0}
+    : ${VEINS_VERSION=5.1}
+    : ${OPP_VERSION=5.6.2}
+    : ${SUMO_VERSION=1.8.0}
     
     export VEINS_VERSION
     export OPP_VERSION
