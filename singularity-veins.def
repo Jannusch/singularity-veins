@@ -95,7 +95,7 @@ MirrorURL:  http://httpredir.debian.org/debian
     mkdir -p /opt/singularity-veins
     echo '#!/bin/bash' > /opt/singularity-veins/run-with-launchd.sh
     echo 'set -e' >> /opt/singularity-veins/run-with-launchd.sh
-    echo '/opt/veins/sumo-launchd.py -d' >> /opt/singularity-veins/run-with-launchd.sh
+    echo '/opt/veins/bin/veins_launchd -d' >> /opt/singularity-veins/run-with-launchd.sh
     echo 'trap "kill $(cat /tmp/sumo-launchd.pid)" EXIT' >> /opt/singularity-veins/run-with-launchd.sh
     echo '"$@"' >> /opt/singularity-veins/run-with-launchd.sh
     chmod a+x /opt/singularity-veins/run-with-launchd.sh
